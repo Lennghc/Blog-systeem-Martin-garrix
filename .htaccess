@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^(phpmyadmin)($|/) - [L]
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js)$
+RewriteRule (.*) index.php [QSA,L]
